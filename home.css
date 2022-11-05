@@ -1,0 +1,132 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.part1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  font-size: 40px;
+  height: 60vh;
+}
+
+.part1 img {
+  margin-left: 80px;
+  height: 420px;
+  width: 400px;
+  border: solid 1px black;
+  border-radius: 100%;
+}
+
+.buton {
+  background-color: antiquewhite;
+  width: 180px;
+  height: 60px;
+  border: 1px solid black;
+  border-radius: 50px;
+  margin: 50px 0 0 180px;
+  -webkit-box-shadow: 5px 5px 15px -7px #000000;
+  box-shadow: 5px 5px 15px -7px #000000;
+}
+.part2 {
+  width: 80%;
+  height: 175px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 80px;
+}
+.part2 img {
+  border: 2px solid white;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: rgba(0, 0, 0, 0.4);
+  margin-top: 15px;
+  width: 7.2rem;
+  height: 8.2rem;
+}
+#animaçao {
+  border-right: 4px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.part3 {
+  display: flex;
+  align-items: center;
+  margin-top: 300px;
+  margin-bottom: 50px;
+  height: 75vh;
+  width: 95%;
+}
+
+.part3 img {
+  width: 34vw;
+}
+
+.sobremim {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3vh;
+  padding: 70px;
+  color: white;
+  width: 45rem;
+  border: 2px solid white;
+  border-radius: 10px;
+  background: #8d5c33;
+}
+
+.typing-animation {
+  animation: blinkcursor 500ms infinite normal,
+    typing 2s steps(40) 1s normal both;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 430px;
+  }
+}
+
+@keyframes blinkcursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0, 75);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@media (max-width: 880px) {
+  .part1 {
+    font-size: 35px;
+    font-size: 40px;
+    height: 70vh;
+  }
+  span {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .part2 {
+    margin-top: 185px;
+  }
+  .sobremim {
+    margin: 0 auto;
+  }
+  main img {
+    display: none;
+  }
+}
